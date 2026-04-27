@@ -1,4 +1,6 @@
+import './tema.estilos.css'
+
 export function Tema ({ tema }) {
-    
-    return <h2>{tema.nome}</h2>
+
+    return <h2 className='titulo-tema'>{tema.nome}</h2>
 }
