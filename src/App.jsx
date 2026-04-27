@@ -8,8 +8,6 @@ import { useState } from "react";
 // no react componentes são FUNÇÕES
 
 function App() {
-  
-  
   const temas = [
     {
       id: 1,
@@ -44,10 +42,10 @@ function App() {
       data: new Date(),
       titulo: "Mulheres no Front",
     },
-  ])
+  ]);
 
   function adicionarEvento(evento) {
-    setEventos([...eventos, evento])
+    setEventos([...eventos, evento]);
   }
 
   return (
@@ -61,9 +59,9 @@ function App() {
         return (
           <section key={item.id}>
             <Tema tema={item} />
-            {eventos.map (function (item, index){
-              return <CardEvento evento={item} key={index} />
-            })}            
+            {eventos.map(function (item, index) {
+              return <CardEvento evento={item} key={index} />;
+            })}
           </section>
         );
       })}
