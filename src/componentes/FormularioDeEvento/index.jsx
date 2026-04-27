@@ -21,14 +21,16 @@ export function FormularioDeEvento() {
         </CampoDeFormulario>
         <CampoDeFormulario>
           <Label htmlFor="listaSuspensa">Tema do Evento</Label>
-          <Lista type="select" id="listaSuspensa" name="listaSuspensa" placeholder="Selecione uma opção" />
+          <Lista
+            type="select"
+            id="listaSuspensa"
+            name="listaSuspensa"
+            placeholder="Selecione uma opção"
+          />
         </CampoDeFormulario>
       </div>
       <div className="acoes">
-        <Botao>
-          Criar evento
-        </Botao>
-
+        <Botao>Criar evento</Botao>
       </div>
     </form>
   );
